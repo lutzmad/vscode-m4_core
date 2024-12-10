@@ -224,15 +224,17 @@
 		},
 		"functions": {
 			"comment": "User M4 functions",
-			"name": "support.function.m4",
-			"begin": "[\\w\\d_]*\\(",
-			"end": "\\)",
-			"patterns": [{ "include": "#expressions" }]
+			"patterns": [{
+				"name": "support.function.m4",
+				"begin": "[\\w\\d_]*\\(",
+				"end": "\\)",
+				"patterns": [{ "include": "#expressions" }]
+			}]
 		},
 		"constants": {
 			"comment": "GNU M4 constant keywords",
 			"patterns": [{
-				"name": "constant.language.m4",
+				"name": "support.constant.m4",
 				"match": "\\b(__file__|__gnu__|__line__|__os2__|__program__|__unix__|__windows__)\\b"
 			}]
 		},
