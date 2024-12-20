@@ -4,8 +4,11 @@ This is the README for the extension "M4 Core".
 
 This is a simple M4 core syntax highlighting extension.
 
-The standard POSIX and the GNU M4 buildin commands should be handled properly, based on the default quotation.
-Keep in mind, M4SUGAR, M4SH, AUTOCONF and AUTOTEST have chosen to use '[' and ']' for quotation. The mostly used AUTOCONF macros are not highlighted, therefore.
+The standard POSIX and the GNU M4 buildin commands should be handled properly, based on the default quotation. By default M4 uses "`" and "'" as quotes.
+
+The quote delimiters can be changed with the builtin "changequote", but this is not taken into account by the extension. In general "changequote" is evil and should not used.
+
+Keep in mind, M4SUGAR, M4SH, AUTOCONF and AUTOTEST have chosen to use "[" and "]" for quotation. The mostly used AUTOCONF macros are not highlighted, therefore.
 
 ## Features
 
