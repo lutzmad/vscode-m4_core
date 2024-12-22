@@ -225,14 +225,14 @@
 		"functions": {
 			"comment": "User M4 functions",
 			"patterns": [{
-				"begin": "\\b([$\\w]+)(\\()",
+				"begin": "\\b([\\w\\d_]+)(\\()",
 				"end": "\\)",
 				"beginCaptures": {
-					"1": { "name": "entity.name.function.m4" },
-					"2": { "name": "entity.name.function.m4" }
+					"1": { "name": "support.function.m4" },
+					"2": { "name": "support.function.m4" }
 				},
 				"endCaptures": {
-					"0": { "name": "entity.name.function.m4" }
+					"0": { "name": "support.function.m4" }
 				},
 				"patterns": [{ "include": "#expressions" }]
 			}]
@@ -240,7 +240,7 @@
 		"constants": {
 			"comment": "GNU M4 constant keywords",
 			"patterns": [{
-				"name": "variable.language.m4",
+				"name": "support.constant.m4",
 				"match": "\\b(__file__|__gnu__|__line__|__os2__|__program__|__unix__|__windows__)\\b"
 			}]
 		},
